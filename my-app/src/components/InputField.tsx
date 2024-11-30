@@ -9,7 +9,7 @@ interface Props{
 //in stating the type of the props, it could have been inline [{todo,setTodo}:{ todo:string, setTodo:React.Dispatch<React.SetStateAction<string>>}] but here, we created an interface Props and used it instead to make the code look cleaner.
 
 const InputField = ({todo,setTodo,handleAdd}:Props) => {
-    const inputRef = useRef<HTMLInputElement>(null)
+    const inputRef = useRef<HTMLInputElement>(null);
 
   return (
     <form className='input' onSubmit={(e)=>{
